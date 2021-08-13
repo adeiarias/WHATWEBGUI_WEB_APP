@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #573255;
+}
+
+.pages {
+  color: #2f3036;
+  text-align: center;
+  font-size: 3.5rem;
+  margin-top: 10%;
+}
+
+.ScanWeb {
+  position: absolute;
+  width: 50%;
+  top: 10vh;
+  height: 80vh;
+}
+
+.ScanOutput {
+  position: absolute;
+  left: 50%;
+  top: 10vh;
+  height: 80vh;
+  width: 50%;
+}
+
+.scanOptions {
+  position: absolute;
+  width: 100%;
+  top: 25vh;
+  height: 40vh;
+}
+
+.optionValue {
+  position: absolute;
+  top: 12vh;
+  height: 60vh;
+  width: 42vw;
+  margin: 1em;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black;
+}
+
+.App-logo {
+  height: 30vmin;
+  pointer-events: none;
+}
+
+.App {
+  text-align: center;
+}
+
+.optionText {
+  color: white;
+  font-size:2vh;
+}
+
+.textfield_text {
+  font-size: 4vw;
+  color: white;
+  position: sticky;
+  left: 5vw;
+  top: 15vh;
+}
+
+.app_text {
+  font-size: 80px;
+  color: white;
+
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} 
+
+.scanButton {
+  background-color: #28478a;
+  border: none;
+  color: white;
+  font-size: 2vh;
+  height: 5vh;
+  width: 20vw;
+  position: sticky;
+  left: 5vw;
+  top: 80vh;
+}
+
+.scan-input {
+  background-color: white;
+  border: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 4vh;
+  width: 30vw;
+  position: sticky;
+  left: 5vw;
+  top: 28vh;
+}
+
+.vl {
+  border-left: 6px solid black;
+  height: 80%;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  margin-left: -3px;
+}
+
+fieldset {
+  overflow: hidden
+}
+
+.some-class {
+  float: left;
+  clear: none;
+}
+
+label {
+  float: left;
+  clear: none;
+  display: block;
+}
+
+input[type=radio],
+input.radio {
+  float: left;
+  clear: none;
+  font-size:1vh;
+}
