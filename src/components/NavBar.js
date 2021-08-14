@@ -46,7 +46,7 @@ function NavBar() {
                 className="nav-links"
                 onClick={handleClick}
               >
-                About Us
+                About
               </NavLink>
             </li>
           </ul>

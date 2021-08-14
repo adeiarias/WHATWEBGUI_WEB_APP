@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #573255;
+  background-color: #493257;
 }
 
 .pages {
@@ -12,39 +12,6 @@ body {
   text-align: center;
   font-size: 3.5rem;
   margin-top: 10%;
-}
-
-.ScanWeb {
-  position: absolute;
-  width: 50%;
-  top: 10vh;
-  height: 80vh;
-}
-
-.ScanOutput {
-  position: absolute;
-  left: 50%;
-  top: 10vh;
-  height: 80vh;
-  width: 50%;
-}
-
-.scanOptions {
-  position: absolute;
-  width: 100%;
-  top: 25vh;
-  height: 40vh;
-}
-
-.optionValue {
-  position: absolute;
-  top: 12vh;
-  height: 60vh;
-  width: 42vw;
-  margin: 1em;
-  border-width: 5px;
-  border-style: solid;
-  border-color: black;
 }
 
 .App-logo {
@@ -56,23 +23,116 @@ body {
   text-align: center;
 }
 
-.optionText {
-  color: white;
-  font-size:2vh;
-}
-
-.textfield_text {
-  font-size: 4vw;
-  color: white;
-  position: sticky;
-  left: 5vw;
-  top: 15vh;
-}
-
 .app_text {
   font-size: 80px;
   color: white;
 
+}
+
+.ScanWeb {  
+  position: absolute;
+  width: 50%;
+  top: 10vh;
+  height: 90vh;
+}
+
+.ScanOutput {
+  position: absolute;
+  left: 50%;
+  top: 10vh;
+  height: 90vh;
+  width: 50%;
+}
+
+/*SCAN.JS -> VERTICAL STICK*/
+.vl {
+  border-left: 6px solid black;
+  height: 80%;
+  position: absolute;
+  left: 50%;
+  top: 15vh;
+  margin-left: -3px;
+}
+
+.scanweb-text {
+  position: absolute;
+  left: 10%;
+  top: 10vh;
+  height: 10vh;
+  width: 80%;
+}
+
+.scanweb-output {
+  position: absolute;
+  left: 10%;
+  top: 10vh;
+  height: 10vh;
+  width: 80%;
+
+}
+
+.scanweb-title {
+  font-size: 3vw;
+  color: white;
+  position: absolute;
+  left: 22%;
+  top: 6%;
+}
+
+.scanoutput-title {
+  font-size: 3vw;
+  color: white;
+  position: absolute;
+  left: 26%;
+  top: 6%;
+}
+
+.textfield-div {
+  position: absolute;
+  left: 20%;
+  top: 21vh;
+  height: 8vh;
+  width: 60%;
+}
+
+.scan-switch {
+  position: absolute;
+  left: 85%;
+  top: 21vh;
+  height: 8vh;
+  width: 10%;
+  border: 1px solid red
+}
+
+.scanOptions {
+  position: absolute;
+  left: 10%;
+  width: 80%;
+  top: 30vh;
+  height: 45vh;
+  border: 1px solid red
+}
+
+.scan-button {
+  position: absolute;
+  left: 10%;
+  width: 80%;
+  top: 76vh;
+  height: 8vh;
+}
+
+.output-text {
+  position: absolute;
+  left: 10%;
+  width: 80%;
+  top: 23vh;
+  height: 61vh;
+  border: 1px solid rgb(0, 0, 0)
+}
+
+.optionText {
+  color: white;
+  font-size:2vh;
 }
 
 .App-link {
@@ -86,59 +146,78 @@ body {
   to {
     transform: rotate(360deg);
   }
-} 
-
-.scanButton {
-  background-color: #28478a;
-  border: none;
-  color: white;
-  font-size: 2vh;
-  height: 5vh;
-  width: 20vw;
-  position: sticky;
-  left: 5vw;
-  top: 80vh;
 }
 
-.scan-input {
-  background-color: white;
-  border: none;
-  padding-left: 10px;
-  padding-right: 10px;
-  height: 4vh;
-  width: 30vw;
-  position: sticky;
-  left: 5vw;
-  top: 28vh;
-}
-
-.vl {
-  border-left: 6px solid black;
-  height: 80%;
+.whatweb-info {
   position: absolute;
-  left: 50%;
-  top: 10%;
-  margin-left: -3px;
+  left: 5%;
+  top: 10vh;
+  height: 72vh;
+  width: 90%;
 }
 
-fieldset {
-  overflow: hidden
+.whatwebgui-info {
+  position: absolute;
+  left: 5%;
+  top: 10vh;
+  height: 72vh;
+  width: 90%;
 }
 
-.some-class {
-  float: left;
-  clear: none;
+.whatwebgui-title {
+  position: absolute;
+  left: -6%;
+  top: 5vh;
+  height: 10vh;
+  width: 90%;
 }
 
-label {
-  float: left;
-  clear: none;
-  display: block;
+.whatweb-title {
+  position: absolute;
+  left: -10%;
+  top: 5vh;
+  height: 10vh;
+  width: 90%;
+
 }
 
-input[type=radio],
-input.radio {
-  float: left;
-  clear: none;
-  font-size:1vh;
+.whatwebgui-text {
+  position: absolute;
+  left: 5%;
+  top: 15vh;
+  height: 53vh;
+  width: 90%;
+}
+
+.whatweb-text {
+  position: absolute;
+  left: 5%;
+  top: 15vh;
+  height: 53vh;
+  width: 90%;
+}
+
+.whatweb-title-text {
+  font-size: 2.5vw;
+  color: white;
+  position: absolute;
+  left: 21%;
+  top: 5%;
+}
+
+.whatwebgui-title-text {
+  font-size: 2.5vw;
+  color: white;
+  position: absolute;
+  left: 16%;
+  top: 5%;
+}
+
+.about-text {
+  text-align: left;
+  font-size: 1.5vw;
+  color: white;
+  position: absolute;
+  left: 5%;
+  top: 5%;
 }
