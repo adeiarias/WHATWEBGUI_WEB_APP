@@ -29,10 +29,7 @@ async function hostnameExists(hostname) {
 }
 
 async function executeCommands(domain, aggressionMode, userAgent, verboseMode) {
-  var whatweb = "/home/adeiarias/WhatWeb/whatweb --aggression " + aggressionMode + " --log-json=scan.json --color=never"
-    if(userAgent != "") {
-      whatweb = whatweb + " --user-agent " + userAgent
-    }
+  var whatweb = "../../WhatWeb/whatweb --aggression " + aggressionMode + " --log-json=scan.json --color=never"
     if(verboseMode==1) {
       whatweb = whatweb + " -v"
     }
@@ -116,22 +113,24 @@ function createScanModel() {
 
 router.route('/').post(async (req, res) => {
   const domain = req.body.domain
-  const userAgent = req.body.userAgent;
-  const verboseMode = Number(req.body.verboseMode);
-  const aggressionMode = Number(req.body.aggressionMode);
-  if(await hostnameExists(domain)) {
-    if(await executeCommands(domain, aggressionMode, userAgent, verboseMode)) {
-      res.json(scanOutput)
-      fillModelInfo();
-      createScanModel();
+  const verboseMode = req.body.verboseMode;
+  const aggressionMode = req.body.aggressionMode;
+  if(typeof aggressionMode === 'number' && typeof verboseMode === 'boolean') {
+    if(await hostnameExists(domain)) {
+      if(await executeCommands(domain, Number(aggressionMode), Number(verboseMode))) {
+        res.json(scanOutput)
+        fillModelInfo();
+        createScanModel();
+      } else {
+        res.json("An error has ocurred");
+      }
+      
     } else {
-      res.json("An error has ocurred");
-    }
-    
+      res.json("This domain does not exist");
+    } 
   } else {
-    res.json("This domain does not exist");
-  }
-  
+    res.json("Given data is not correct");
+  }  
 });
 
 module.exports = router;

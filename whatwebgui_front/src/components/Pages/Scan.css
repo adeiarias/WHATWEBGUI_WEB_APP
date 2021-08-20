@@ -33,15 +33,7 @@
   .firstOpc {
     position: absolute;
     left: 5%;
-    top: 8vh;
-    height: 10vh;
-    width: 90%;
-  }
-  
-  .secondOpc {
-    position: absolute;
-    left: 5%;
-    top: 18vh;
+    top: 10vh;
     height: 10vh;
     width: 90%;
   }
@@ -49,7 +41,7 @@
   .lastOpc {
     position: absolute;
     left: 5%;
-    top: 26vh;
+    top: 20vh;
     height: 10vh;
     width: 90%;
   }

@@ -19,13 +19,6 @@ const useStyles = makeStyles((theme) => ({
       color: 'black',
     },
   },
-  userAgentTextfield: {
-    '& > *': {
-      width: '50%',
-      fontSize: '1vh',
-      color: 'black',
-    },
-  },
   button: {
     '& > *': {
       width: '40vh',
@@ -159,12 +152,6 @@ function Scan() {
                 </MenuItem>
               ))}
             </TextField>
-          </div>
-
-          <div className="secondOpc">
-            <form className={classes.userAgentTextfield} noValidate autoComplete="off">
-              <TextField id="outlined-basic" label="UserAgent (Optional)" variant="outlined" size="small" onChange={(event) => setUserAgent(event.target.value)}/>
-            </form>
           </div>
           <div className="lastOpc">
             <FormControl component="fieldset">
