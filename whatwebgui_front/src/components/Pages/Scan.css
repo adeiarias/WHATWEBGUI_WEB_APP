@@ -1,0 +1,153 @@
+.scanweb-text {
+    position: absolute;
+    left: 10%;
+    top: 10vh;
+    height: 10vh;
+    width: 80%;
+  }
+
+  .scanweb-title {
+    font-size: 3vw;
+    color: black;
+    position: absolute;
+    left: 22%;
+    top: 6%;
+  }
+
+  .textfield-div {
+    position: absolute;
+    left: 20%;
+    top: 26vh;
+    height: 8vh;
+    width: 60%;
+  }
+
+  .scanOptions {
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    top: 33vh;
+    height: 45vh;
+  }
+
+  .firstOpc {
+    position: absolute;
+    left: 5%;
+    top: 8vh;
+    height: 10vh;
+    width: 90%;
+  }
+  
+  .secondOpc {
+    position: absolute;
+    left: 5%;
+    top: 18vh;
+    height: 10vh;
+    width: 90%;
+  }
+  
+  .lastOpc {
+    position: absolute;
+    left: 5%;
+    top: 26vh;
+    height: 10vh;
+    width: 90%;
+  }
+
+  .scan-button {
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    top: 67vh;
+    height: 8vh;
+  }
+  
+  .errorMessage {
+    background-color: red;
+    position: absolute;
+    left: 30%;
+    width: 40%;
+    top: 75vh;
+    height: 3vh;
+    border-radius: 10px;
+  }
+
+  .errorText {
+    position: absolute;
+    top: 10%;
+    left: 19%;
+    font-size: 2vh;
+    color: black;
+  }
+
+  /*SCAN.JS -> VERTICAL STICK*/
+  .vl {
+    border-left: 6px solid black;
+    height: 80%;
+    position: absolute;
+    left: 50%;
+    top: 15vh;
+    margin-left: -3px;
+  }
+ 
+  .scanweb-output {
+    position: absolute;
+    left: 10%;
+    top: 10vh;
+    height: 10vh;
+    width: 80%;
+  }
+  
+  .scanoutput-title {
+    font-size: 3vw;
+    color: black;
+    position: absolute;
+    left: 26%;
+    top: 6%;
+  }
+
+  .output-text {
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    top: 23vh;
+    height: 61vh;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+
+  .output-domain {
+    position: absolute;
+    left: 2%;
+    width: 96%;
+    top: 1vh;
+    height: 9vh;
+  }
+
+  .output-text-domain {
+    text-align: center;
+    color: black;
+    font-size: 6vh;
+  }
+
+  .output-domain-scan {
+    position: absolute;
+    left: 2%;
+    width: 96%;
+    top: 10vh;
+    height: 49.5vh;
+    overflow: auto
+  }
+
+  .output-text-scan {
+    color: black;
+    font-size: 2.5vh;
+  }
+
+  .loading {
+    position: absolute;
+    left: 30%;
+    width: 40%;
+    top: 14vh;
+    height: 25vh;
+  }

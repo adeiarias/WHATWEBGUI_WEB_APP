@@ -1,5 +1,7 @@
 import React from "react";
 import './../../App.css';
+import './About.css';
+import whatweb_logo from './../../images/whatweb_logo.png';
 
 export const About = () => {
   return (
@@ -29,24 +31,8 @@ export const About = () => {
       </div>
       <div className="ScanOutput">
         <div className="whatwebgui-info">
-          <div className="whatwebgui-title">
-            <p className="whatwebgui-title-text">WHAT IS WHATWEBGUI?</p>
-          </div>
           <div className="whatwebgui-text">
-            <p className="about-text">
-              WhatWeb is a next generation web scanner.
-              <br />
-              <br />
-              WhatWeb recognises web technologies including 
-              content management systems (CMS), blogging platforms, 
-              statistic/analytics packages, JavaScript libraries, web servers, 
-              and embedded devices.
-              <br />
-              <br />
-              WhatWeb has over 1800 plugins, each to recognise something different. 
-              WhatWeb also identifies version numbers, email addresses, account IDs, 
-              web framework modules, SQL errors, and more.
-            </p>
+            <img src={whatweb_logo} className="WW-logo" alt="logo" />
           </div>
         </div>
       </div>

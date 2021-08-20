@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/*#f2e7f8*/
+body {
+  background-color: #ffffff;
+}
+
+.pages {
+  color: #2f3036;
+  text-align: center;
+  font-size: 3.5rem;
+  margin-top: 10%;
+}
+
+.App-logo {
+  height: 30vmin;
+  pointer-events: none;
+}
+
+.App {
+  text-align: center;
+}
+
+.ScanWeb {  
+  position: absolute;
+  width: 50%;
+  top: 10vh;
+  height: 90vh;
+}
+
+.ScanOutput {
+  position: absolute;
+  left: 50%;
+  top: 10vh;
+  height: 90vh;
+  width: 50%;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

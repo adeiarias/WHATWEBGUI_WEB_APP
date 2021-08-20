@@ -1,4 +1,5 @@
 import './../../App.css';
+import './Main.css'
 import whatweb_logo from './../../images/wwgui_logo.png';
 
 function Main() { 
