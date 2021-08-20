@@ -17,3 +17,34 @@ Furthermore, not only website's name will be recorded, but also its IP Address, 
 
 ### About
 In this tab, you'll find information about WhatWeb tool.
+
+
+
+## How to deplay this app
+In some days, I'll upload a docker-compose file, but If you want to use the application right now, follow the next steps:
+Clone this repository using the following command -> git clone 
+Clone WhatWeb repository if you haven't done it yet. Then, move it inside this project's folder (if you don't want to move it, you'll have to change the path in whatwebgui_back/routes/scan.js
+
+### FRONTEND
+Now, install "npm" -> 
+sudo apt update
+sudo apt install nodejs
+sudo apt install npm
+
+Move to whatwebgui_front folder and exec this command -> sudo npm i (this will create a folder called "node_modules" and it'll install every package used in this project)
+
+Verify everything it's been installed correctly by executing this command (it's necessary to be in whatwebgui_front folder)-> npm start
+
+### BACKEND
+Now, let's configure the backend
+Move to whatwebgui_back folder and exec this command -> sudo npm i
+
+Install these packages to be able to use whatweb command:
+sudo apt install ruby-bundler
+sudo apt install ruby
+
+One important thing, inside backend folder, you'll find a file called '.env', there you'll have to write your mongodb path
+Start the backend with this command -> nodemon server --ext js
+And start mongodb -> sudo systemctl start mongod
+
+And now you're ready to use this application. ENJOY IT!!!
