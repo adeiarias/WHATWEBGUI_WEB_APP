@@ -20,7 +20,7 @@ In this tab, you'll find information about WhatWeb tool.
 
 
 
-## How to deplay this app
+## How to deploy this app
 In some days, I'll upload a docker-compose file, but If you want to use the application right now, follow the next steps:
 Clone this repository using the following command -> git clone 
 Clone WhatWeb repository if you haven't done it yet. Then, move it inside this project's folder (if you don't want to move it, you'll have to change the path in whatwebgui_back/routes/scan.js
